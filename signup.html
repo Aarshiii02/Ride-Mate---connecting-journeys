@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Mate- sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign up</h2>
+        <form id="signupform" onsubmit="signup(event)">
+            <input type="text" id="name" placeholder="Full name" required>
+            <input type="text" id="mobile" placeholder="Mobile number" required>
+            <input type="password" id="password" placeholder="password" required>
+            <select id="role" required>
+                <option value="driver">Driver</option>
+                <option value="passenger">Passenger</option>
+            </select>
+            <button type="submit">Sign up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

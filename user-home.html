@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Mate - Passenger Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome, Passenger 🚖</h2>
+    <p>Book your next ride easily</p>
+
+    <form onsubmit="bookRide(event)">
+      <input type="text" id="pickup" placeholder="Pickup Location" required>
+      <input type="text" id="drop" placeholder="Drop Location" required>
+
+      <select id="seats" required>
+        <option value="" disabled selected>Seats Needed</option>
+        <option value="1">1 Seat</option>
+        <option value="2">2 Seats</option>
+        <option value="3">3 Seats</option>
+      </select>
+
+      <input type="text" id="price" placeholder="Estimated Price (₹)" readonly>
+
+      <button type="submit">Request Ride</button>
+    </form>
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
